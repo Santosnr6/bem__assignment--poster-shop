@@ -1,0 +1,1 @@
+# bem__assignment--poster-shop
