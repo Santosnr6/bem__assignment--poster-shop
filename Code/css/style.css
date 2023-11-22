@@ -46,17 +46,27 @@ body main article {
   color: #fff;
 }
 
-body main article.large {
+body main article:nth-child(10),
+body main article:nth-child(11) {
   grid-column: auto / span 3;
   background: #fff;
   color: #222;
 }
 
-body main article.large h2, body main article.large p {
+body main article:nth-child(10) img,
+body main article:nth-child(11) img {
+  padding: .5rem;
+}
+
+body main article:nth-child(10) h2, 
+body main article:nth-child(11) h2,
+body main article:nth-child(10) p,
+body main article:nth-child(11) p {
   margin: 0 1rem;
 }
 
-body main article.large button {
+body main article:nth-child(10) button,
+body main article:nth-child(11) button {
   margin: 1rem;
   padding: 1rem 2rem;
 }
@@ -84,6 +94,11 @@ body main article button {
   border-radius: .125rem;
   margin-top: 2rem;
   font-weight: 600;
+  cursor: pointer;
+}
+
+body main article button:hover {
+  background-color: #ea5a70;
 }
 
 body footer {
@@ -119,25 +134,4 @@ body footer section article p {
 body footer section article figure {
   display: flex;
   gap: 1rem;
-}
-
-@media (max-width: 480px) {
-  
-  body main article {
-    grid-column: auto / span 3;
-  }
-
-  body main article.large {
-    grid-column: auto / span 6;
-  }
-
-  body footer section {
-    grid-template-columns: 1fr;
-  }
-
-  body footer section article {
-    height: auto;
-    padding: 1rem 2rem;
-  }
-
 }
