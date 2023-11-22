@@ -55,7 +55,7 @@ body main article:nth-child(11) {
 
 body main article:nth-child(10) img,
 body main article:nth-child(11) img {
-  padding: .5rem;
+  padding:.5rem;
 }
 
 body main article:nth-child(10) h2, 
